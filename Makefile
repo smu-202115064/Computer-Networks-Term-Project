@@ -11,4 +11,10 @@ client: src/client.c
 server: src/server.c
 	gcc src/server.c -o bin/server
 
+run-server:
+	bin/server
+
+run-client:
+	echo "Hello\nComputer\nNetworks\nc\nc\nGoodBye!!\nc\nq\n" | bin/client
+
 clear:
