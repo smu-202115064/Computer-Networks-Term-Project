@@ -50,7 +50,7 @@ int main(void)
         printf("Input message: ");
         scanf("%s", buf);
 
-        if (write(sd, buf, sizeof(buf)) == -1)
+        if (write(sd, buf, strlen(buf) + 1) == -1)
         {
             perror("send");
             exit(1);
